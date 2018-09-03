@@ -1,7 +1,7 @@
 # kafka-backend-web
 A proof of concept whether [Apache Kafka](https://kafka.apache.org/) can be used as a backend
 
-The frontend is a modified version of Flavio Copes React Chat App: https://github.com/flaviocopes/chat-app-react-redux-saga-websockets
+The frontend is a modified version of [Flavio Copes React Chat App](https://github.com/flaviocopes/chat-app-react-redux-saga-websockets)
 
 ## Setup
 
@@ -9,47 +9,43 @@ The frontend is a modified version of Flavio Copes React Chat App: https://githu
 
 Linux:
 
-> cd kafka
-
-> tar -xvzf kafka_2.11-1.1.1.tgz
-
-> cd kafka_2.11-1.1.1
-
-> bin/zookeeper-server-start.sh config/zookeeper.properties
-
-> bin/kafka-server-start.sh config/server.properties
+```
+cd kafka
+tar -xvzf kafka_2.11-1.1.1.tgz
+cd kafka_2.11-1.1.1
+bin/zookeeper-server-start.sh config/zookeeper.properties
+bin/kafka-server-start.sh config/server.properties
+```
 
 Windows:
 
-> cd kafka
-
-> Unpack kafka_2.11-1.1.1.tgz with 7Zip or something similar
-
-> cd kafka_2.11-1.1.1
-
-> bin/windows/zookeeper-server-start.sh config/zookeeper.properties
-
-> bin/windows/kafka-server-start.sh config/server.properties
+```
+cd kafka
+Unpack kafka_2.11-1.1.1.tgz with 7Zip or something similar
+cd kafka_2.11-1.1.1
+bin/windows/zookeeper-server-start.sh config/zookeeper.properties
+bin/windows/kafka-server-start.sh config/server.properties
+```
 
 2. Middleware
 
-> cd middleware
-
-> yarn install
-
-> yarn dev
+```
+cd middleware
+yarn install
+yarn dev
+```
 
 3. Frontend
 
-> cd frontend
+```
+cd frontend
+yarn install
+yarn start
+```
 
-> yarn install
+Your browser should automatically open a new window on http://localhost:3000/.
 
-> yarn start
-
-Your browser should automatically open a new window on localhost:3000.
-
-To test multiple clients: Open localhost:3000 in another browser.
+To test multiple clients: Open http://localhost:3000/ in another browser.
 
 ## How it works
 
