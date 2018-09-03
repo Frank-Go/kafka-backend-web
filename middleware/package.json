@@ -1,0 +1,17 @@
+{
+  "name": "middleware",
+  "version": "0.1.0",
+  "private": true,
+  "description": "provides websockets to clients and connects to kafka",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "devDependencies": {
+    "kafka-node": "^1.6.2",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "ws": "^3.2.0"
+  }
+}
